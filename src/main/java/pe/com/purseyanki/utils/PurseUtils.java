@@ -11,9 +11,9 @@ public class PurseUtils {
     }
 
     public static PurseDto entityToDto(final Purse customer) {
-        var walletDto = new PurseDto();
-        BeanUtils.copyProperties(customer, walletDto);
-        return walletDto;
+        var purseDto = new PurseDto();
+        BeanUtils.copyProperties(customer, purseDto);
+        return purseDto;
     }
     public static Purse dtoToEntity(final PurseDto purseDto) {
         var entity = new Purse();
